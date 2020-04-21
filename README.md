@@ -15,8 +15,26 @@
  #4.] Runserver
   >> $ python manage.py runserver
   ```
-  
-  
+
+
+** Make sure update the ```sh [setting.py](https://github.com/yash2231/Django_todo_App/blob/master/TodoApp/settings.py) ``` 
+
+```sh
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'YOUR DB NAME',
+        'USER': 'root',
+        'PASSWORD': '',
+        'HOST': '127.0.0.1',
+        'PORT': '3306',
+        'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",
+    }
+}
+
+```
+***
+
 
 **#Landing page**
 
