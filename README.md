@@ -19,7 +19,7 @@
 
 **Make sure update the [setting.py](https://github.com/yash2231/Django_todo_App/blob/master/TodoApp/settings.py)**
 
-```sh
+```
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
