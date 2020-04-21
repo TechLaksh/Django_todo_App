@@ -17,7 +17,7 @@
   ```
 
 
-** Make sure update the ```sh [setting.py](https://github.com/yash2231/Django_todo_App/blob/master/TodoApp/settings.py) ``` 
+** Make sure update the [setting.py](https://github.com/yash2231/Django_todo_App/blob/master/TodoApp/settings.py)**
 
 ```sh
 DATABASES = {
@@ -33,7 +33,6 @@ DATABASES = {
 }
 
 ```
-***
 
 
 **#Landing page**
