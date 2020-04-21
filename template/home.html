@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo-App</title>
+</head>
+<body>
+    {% load static %}
+    {% load crispy_forms_tags %}
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Teko:wght@600&display=swap" rel="stylesheet">
+    
+    <style>
+    body{
+        font-family: 'Josefin Sans', sans-serif;
+    }
+    </style>
+
+<div class="container">
+
+    <div style="background-color: #333;" class="jumbotron text-light">
+        <h1 style="font-family: 'Teko', sans-serif; text-transform: uppercase;" class="display-4">Add tasks</h1>
+        <p class="lead">Add task and update,Delete uding Django and MYSQL</p>
+        <hr class="my-4">
+        
+        <div class="container">
+            <form method="POST" action="/">
+                {% csrf_token %}
+                {{form | crispy }}
+                <button class="btn btn-success" type="submit">Create Task</button>
+            </form>
+        </div>
+     
+
+
+      <div style="margin-top: 20px;" class="container">
+          {% for tasks in tasks  %}
+          <div class="list-group">
+            <li href="#" class="list-group-item list-group-item-action mb-2">
+                {% if tasks.complete == True %}
+                <strike> {{tasks}} </strike>
+                <a style="float: right; color: aliceblue; padding: 5px; margin-left: 20px;" href=" {% url 'update' tasks.id %} " class="badge badge-primary badge-dark">Update</a>
+                <a style="float: right; color: aliceblue; padding: 5px; " href=" {% url 'delete' tasks.id %} " class="badge badge-danger badge-danger">Delete</a>
+                {% else %}
+                <span> {{tasks}} </span>
+                <a style="float: right; color: aliceblue; padding: 5px; margin-left: 20px;" href=" {% url 'update' tasks.id %} " class="badge badge-primary badge-dark">Update</a>
+                <a style="float: right; color: aliceblue; padding: 5px; " href=" {% url 'delete' tasks.id %} " class="badge badge-danger badge-danger">Delete</a>
+            </li>
+          </div>
+          {% endif %}
+          {% endfor %}
+        </div>
+    </div>
+    <div>
+</div>
+
+  
+
+</body>
+</html>

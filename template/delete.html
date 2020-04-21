@@ -1,0 +1,32 @@
+{% load static %}
+{% load crispy_forms_tags %}
+<link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+
+
+
+<div class="container mt-5">
+
+
+
+    <div class="alert alert-danger" role="alert">
+        <h4 class="alert-heading">Ohh wait a minute !</h4>
+        <p>You are sure to delete "{{ item }}"?</p>
+        <hr>
+
+        <a class="btn btn-success" href=" {% url 'home' %} ">Cancel</a>
+
+
+        <form style="float: right;" action="" method="post">
+    
+            {% csrf_token %}
+    
+            <input class="btn btn-warning" type="submit" name="confirm">
+    
+        </form>
+      </div>
+
+
+    
+   
+
+</div>
