@@ -16,11 +16,20 @@
   >> python manage.py runserver
   ```
 
-#Landing page
+**#Landing page**
+
 ![home_page](https://github.com/yash2231/Django_todo_App/blob/master/screenshot/screeen_1.PNG)
 
-#Delete confirm
+
+
+**#Delete confirm**
+
+
 ![delete_msg](https://github.com/yash2231/Django_todo_App/blob/master/screenshot/screen_2.PNG)
 
-#Uupdate
+
+
+**#Update**
+
+
 ![update](https://github.com/yash2231/Django_todo_App/blob/master/screenshot/screen_3.PNG)
