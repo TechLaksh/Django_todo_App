@@ -15,3 +15,12 @@
  4.] Runserver
   >> python manage.py runserver
   ```
+
+#Landing page
+![home_page](https://github.com/yash2231/Django_todo_App/blob/master/screenshot/screeen_1.PNG)
+
+#Delete confirm
+![delete_msg](https://github.com/yash2231/Django_todo_App/blob/master/screenshot/screen_2.PNG)
+
+#Uupdate
+![update](https://github.com/yash2231/Django_todo_App/blob/master/screenshot/screen_3.PNG)
